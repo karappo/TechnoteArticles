@@ -5,7 +5,6 @@
 [textlint](https://github.com/textlint/textlint)を使って、テキストのチェックができる。
 
 ```
-npm i
 npm test
 ```
 
