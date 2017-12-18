@@ -1,7 +1,11 @@
 {
-  "name": "technote-article-201712-naname-school",
+  "name": "technote-articles",
   "version": "1.0.0",
-  "description": "TechNote Article",
+  "description": "TechNote Articles",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/karappo/TechnoteArticles.git"
+  },
   "main": "README.md",
   "dependencies": {},
   "devDependencies": {
@@ -11,7 +15,7 @@
     "textlint-rule-preset-jtf-style": "^2.3.1"
   },
   "scripts": {
-    "test": "textlint 'README.md'"
+    "test": "textlint './articles/*'"
   },
   "author": "naokazuterada <naokazu.terada@gmail.com> (http://karappo.net)",
   "license": "ISC"
