@@ -1,0 +1,16 @@
+{
+  "name": "technote-article-201712-naname-school",
+  "version": "1.0.0",
+  "description": "TechNote Article",
+  "main": "README.md",
+  "dependencies": {
+    "textlint": "^9.1.1",
+    "textlint-rule-no-todo": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "textlint 'README.md'"
+  },
+  "author": "naokazuterada <naokazu.terada@gmail.com> (http://karappo.net)",
+  "license": "ISC"
+}
