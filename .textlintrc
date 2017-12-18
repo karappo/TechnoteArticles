@@ -1,6 +1,8 @@
 {
   "rules": {
     "no-todo": true,
-    "very-nice-rule": true
+    "no-nfd": true,
+    "preset-japanese": true,
+    "preset-jtf-style": true
   }
 }
