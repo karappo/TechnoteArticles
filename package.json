@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "TechNote Articles",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/karappo/TechnoteArticles.git"
+    "type": "git",
+    "url": "https://github.com/karappo/TechnoteArticles.git"
   },
   "main": "README.md",
   "dependencies": {},
