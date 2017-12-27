@@ -124,24 +124,6 @@ Scratchは、単純なアニメーションからインタラクションが発�
 
 （授業内容について続けて説明）
 
-
-## 印象に残ったこと
-
-- 意外に女の子が多かった
-- 時間制限/競い合うことで生まれる緊張感を久々に味わった
-- 実行中の部分を分かりやすく、ペンを使って示すアイデアを生徒が提案してくれた
-- 子どもたちの意欲・エネルギーを食らった
-
-## まとめ・感想
-
-
-
-## 授業資料
-
-<iframe src="//slides.com/naokazuterada/naname/embed?style=light" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-
-
 ---
 
 プログラムは「表現」なのか？
