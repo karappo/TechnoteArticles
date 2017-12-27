@@ -13,3 +13,9 @@ npm test
 ```
 textlint ./articles/xxxx-xxxx.md
 ```
+
+「✓」がついているものはautofixできる。
+
+```
+textlint --fix './articles/*'
+```
