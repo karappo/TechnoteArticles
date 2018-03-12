@@ -28,12 +28,17 @@
 
 この記事を読んで下さる方は知らない方も多いと思いますので、説明します。・・・
 
+私は、この分野にそれほど明るいわけではありません。ここ何ヶ月かで、仕入れた情報を元にこの記事をまとめているので、実体験を交えた話はあまりありません。
 
 ## FreeStyle Libre
 
-この記事を書いている現在は、2018年3月です。2ヶ月前の2018年1月から、アメリカの[Abbot社](http://www.abbott.com/)の[FreeStyle Libre](https://www.freestylelibre.us/)を処方してもらえるようになりました。
+この記事を書いている現在は、2018年3月です。2ヶ月前の2018年1月から、アメリカの[Abbot社](http://www.abbott.com/)の[FreeStyle Libre](https://www.freestylelibre.us/)を処方してもらえるようになりました。この機械は、500円玉サイズのセンサー（メモリー）を体に取り付けることで、常時血糖値をモニタリングすることができる機械です。
+
+
 
 ### iOSのHealth.appとの連携方法
+
+- [ ] Health Kit？
 
 ### 良かったところ
 
@@ -44,6 +49,8 @@
 【他の機材の紹介。インスリンポンプについても触れる？】
 10年前くらいから普及してきている？
 https://www.youtube.com/watch?v=gj0mQ0x4PDY 9:15
+
+※　LibreはFlash Glucose Monitorで、Continuousではない。
 
 ## SAP(Sensor-Augmented Insulin Pumps)
 
@@ -66,6 +73,10 @@ https://www.youtube.com/watch?v=4JjsOL81wdA
 FBグループで教えてもらいました。
 
 ### NightScout
+
+Libre + iOSでは使えない。
+
+- [ ] Androidでとりあえず体験してみる
 
 ### Bigfoot Biomedical
 
@@ -91,6 +102,7 @@ Bigfoot Co-founder
 ### その他のアプリ
 
 https://spike-app.com/
+元xDrip
 
 ## 今後
 
