@@ -1,53 +1,29 @@
-# T1D（１型糖尿病）を取り巻くテック業界の今
+# T1Dとテクノロジーの現在
 
-<!-- MarkdownTOC -->
-
-- 1型糖尿病\(T1D\)とは
-- ペン型注射器
-- FreeStyle Libre
-	- iOSのHealth.appとの連携方法
-	- 良かったところ
-	- イマイチなところ
-- CGM\(Continuous Glucose Monitoring\)
-- SAP\(Sensor-Augmented Insulin Pumps\)
-- 事例紹介
-	- Dexcom G5
-	- Tidepool
-	- NightScout
-	- Bigfoot Biomedical
-		- Data Driven Disease
-		- Bryan Mazlish
-	- その他のアプリ
-- 今後
-	- 人口膵臓
-	- YouTuber
-
-<!-- /MarkdownTOC -->
-
+私は、1型糖尿病（Type1 Diabetes。以下T1D）という10万人に1〜2人のかなり珍しい病気を持っています。2001年の発症以来、この持病についてまとまった記事を書いたことは、今までなかったのですが、近年この分野でもデジタル技術の波を感じる様になってきました。患者として、エンジニアとして、ついでにデザイナーとしての視点も加えつつ、T1Dに関する今ホットな話題を紹介して行きたいと思います。
 
 ## 1型糖尿病(T1D)とは
 
-私は、2001年12月に1型糖尿病（T1D-Type1 Diabetes）を発症しました。T1Dの発症率は、10万人に1人（0.001%）とかなり珍しい病気です。因みに世間的に「糖尿病」というと、大抵生活習慣病の1種である「2型糖尿病」のことを指しています。名前は似ていますが、成り立ちからして全く別の病気なので、頭を切り替えて混同しないようにして下さい。
+日本人糖尿患者の約95％を占めるのは生活習慣病の2型糖尿病（Type2 Diabetes。以下T2D）です。T1DとT2Dとは全く違います。生活習慣や遺伝などとは無関係に、様々な理由[note]私の場合は風邪のウイルスがトリガーだった可能性が高いですが、厳密には不明です。ストレスなどが原因になる場合もあるようで、誰にでも発症の可能性があります。[/note]から突然発症します。T1Dは、自己免疫が膵臓にあるβ細胞というインスリンを作る細胞を破壊してしまい、インスリンが欠乏する病気です。インスリンは、血液中の糖分（Glucose）を細胞に運びエネルギーに変える働きをしているホルモンです。インスリンが欠乏すると、血液中に糖があふれ高血糖になります。
 
-T1Dとは、遺伝や生活習慣とは関係なく突発的に誰にでも起こりうる膵臓疾患で、インスリン（Insulin）を体内で分泌できなくなる病気です。インスリンは、血液中の糖分（Glucose）をエネルギーに変える働きをしている大事なホルモンです。これが足りないと血糖値はどんどん上昇し、エネルギー供給もされなくなるので、様々な弊害が起こります。そのため、T1D患者は血糖値の高くなる毎食後、必要量のインスリンを自己注射によって補っています。また、食後たけでなく持続型と呼ばれる基礎分泌分を補う目的のもう1種類を1日1回別途注射することも多いです。私の場合も、基礎分泌量もほとんどないので、1日4回の自己注射が生命維持に不可欠な状況です。また、今のところ一度発症すると治りません。発症を知らされた当時、正直に言って絶望しました。毎日数時間おきに指を穿刺して血糖値を測定・記録し、測定値や状況に応じてインスリンの投与量を自分で判断し、自己注射しなくてはならないのです。数週間数ヶ月の話ではありません。一生その鎖に常につながれているのです、想像してみて下さい。
+### 血糖測定とインスリン注射
 
-とはいえ、もっと重篤な病気のことを思えばかなり恵まれています。血糖値のコントロールさえきちんとできれば、健常者と同じように生活できるのですから。また、医療技術の発達によって少しづつ患者の負担は軽減されています。血糖測定器と注射器がメインのプロダクトですが、ここ数年でデジタル技術を使った便利なプロダクトも増えてきました。この記事では、そのあたりの話を紹介していきたいと思います。
+高血糖への唯一の対抗手段はインスリン製剤の注入です。その量が多すぎれば、昏睡から死をも招く低血糖になり、足りなければ高血糖となり<a href="https://ja.wikipedia.org/wiki/%E7%B3%96%E5%B0%BF%E7%97%85%E6%80%A7%E3%82%B1%E3%83%88%E3%82%A2%E3%82%B7%E3%83%89%E3%83%BC%E3%82%B7%E3%82%B9" target="_blank">ケトアシドーシス</a>の危険性や合併症リスクが高まります。そのため、インスリン療法は厳密に行う必要があります。患者は自分自身で、食事のたびに血糖値を測り、その値やこれから摂取する食事量に応じてインスリンの量を見積もり、自己注射します。
 
-また常に持ち歩くものなので、デザインも重要です。正直、昔はかっこ悪いものばかりで、ひと目に晒したくないという気持ちになり、患者の気持ちを後ろ向きにさせていました。最近は、その辺も段々ましになってきました。まだ、自慢できるようなものではないですが、少なくとも恥ずかしいレベルではなくなったのではないかと思います。
-
-## ペン型注射器
+### ペン型注射器
 
 例えば、昔はよく病院で使われているような注射器で針も使い捨てではなかったので、熱消毒の必要もありましたが、今は「ペン型」と呼ばれる携帯性の高いタイプの機材があり、針も使い捨てで消毒は不要です。
 
+![Novo Pen Echo](https://www.novonordisk.com/content/dam/Denmark/HQ/Patients/DiabetesCare/PensNeedlesInjection/NovopenEcho-v3.png)
 
 [Novo Pen Echo](https://www.novonordisk.com/patients/diabetes-care/pens--needles-and-injection-support/NovoPenEcho.html)
 
 
-## FreeStyle Libre
+### FreeStyle Libre
 
 この記事を書いている現在は、2018年3月です。2ヶ月前の2018年1月から、アメリカの[Abbot社](http://www.abbott.com/)の[FreeStyle Libre](https://www.freestylelibre.us/)を処方してもらえるようになりました。この機械は、500円玉サイズのセンサー（メモリー）を体に取り付けることで、常時血糖値をモニタリングすることができる機械です。
 
-
+![FreeStyle Libre](https://www.freestylelibre.us/sites/all/themes/freestyle_libre/images/libre-system-large.png)
 
 ### iOSのHealth.appとの連携方法
 
@@ -55,7 +31,11 @@ T1Dとは、遺伝や生活習慣とは関係なく突発的に誰にでも起�
 
 ### 良かったところ
 
+（以前までの機器から改善された点。Accucheckの説明もする？）
+
 ### イマイチなところ
+
+タッチディスプレイの反応が悪い。
 
 ## CGM(Continuous Glucose Monitoring)
 
@@ -83,7 +63,18 @@ https://www.youtube.com/watch?v=4JjsOL81wdA
 
 ### Tidepool
 
-FBグループで教えてもらいました。
+Tidepoolは、世界中の患者の糖尿病機器からのデータを取得し、患者およびそのケアチームにデータのビジュアライズを提供してくれます。更に、患者は任意で自身のデータを匿名で研究機関に提供することもでき、研究に役立ててもらうこともできるという、オープンソースの非営利企業です。
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hQAXerpH8Tc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+実際の先生と患者が出演して診断している時の様子を見せてくれてる動画。
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jPuCWgqCcR0?start=436" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+[Tidepool](https://tidepool.org/)
+
+[JDRF](http://www.jdrf.org/)（国際若年性糖尿病研究財団）がサポートしている。FBグループ「iVOX (TYPE1 IDDM JAPAN)」で教えていただきました。このグループも、色々な情報が得られます。
+
+ソースコードも公開されててすごい・・・（react+reduxみたい）
+https://github.com/tidepool-org/blip
 
 ### NightScout
 
@@ -102,7 +93,7 @@ Libre + iOSでは使えない。
 https://www.youtube.com/watch?v=uh_QmjkMQd8
 
 - [ ] 色んな人が言ってるみたいだけどどうしよう
-	https://medcitynews.com/2017/01/glooko-novo-nordisk-digital-diabetes/?utm_source=hs_email&utm_medium=email&utm_content=40272698&_hsenc=p2ANqtz--UEtSx0SxjYDdEc3-QT3widYfjJh58FoWDf-5WqI6-9YeKW7_COQfxJNR51af8mrAslGg5OxDLsmeNVGforuzBiYmU1g&_hsmi=40272698
+  https://medcitynews.com/2017/01/glooko-novo-nordisk-digital-diabetes/?utm_source=hs_email&utm_medium=email&utm_content=40272698&_hsenc=p2ANqtz--UEtSx0SxjYDdEc3-QT3widYfjJh58FoWDf-5WqI6-9YeKW7_COQfxJNR51af8mrAslGg5OxDLsmeNVGforuzBiYmU1g&_hsmi=40272698
 
 #### Bryan Mazlish
 
@@ -110,7 +101,7 @@ Bigfoot Co-founder
 家族のためにインスリンポンプをHACKして人口膵臓を自力で作った。（世界初の外来人口膵臓？）
 - [ ] この辺の話をちゃんと調べてまとめる
 - [ ] 夫々のプロフィールに目を通す
-	https://www.bigfootbiomedical.com/leadership/
+  https://www.bigfootbiomedical.com/leadership/
 
 ### その他のアプリ
 
@@ -118,6 +109,8 @@ https://spike-app.com/
 元xDrip
 
 ## 今後
+
+T1Dは一度発症すると治りません。再生医療分野の発達によって将来的に期待は持てますが、まだまだ先の話です。発症を知らされた当時、正直に言って絶望しました。毎日数時間おきに指を穿刺して血糖値を測定・記録し、測定値や状況に応じてインスリンの投与量を自分で判断し自分で注射する、そんな生活を一生続けなければいけないのですから。とはいえ、もっと重篤な病気のことを思えば恵まれています。血糖値のコントロールさえきちんとできれば、健常者と同じように生活できるのですから。また、医療技術の発達によって少しづつ患者の負担は軽減されています。
 
 - 自分の興味
 - 今後のトレンド
@@ -137,7 +130,12 @@ https://www.youtube.com/channel/UC_20PWJ0X0HAloRioVvb5-A
 Michelle Lord
 https://www.youtube.com/channel/UCAaImwzx0e7zPUaylejt3Tw
 
+Githubで「diabetes」で検索すると結構出てくる
+https://github.com/Flameeyes/glucometerutils
+
 - [ ] もっといないか調べる
 - [ ] それぞれの動画をもっと見て、感想をまとめる。
 - [ ] お勧め回など
 
+小児発症が多いため、かつては「小児糖尿病」と呼ばれていました。
+参照：[インスリン療法を知る ｜ 糖尿病がよくわかるDM TOWN](https://www.dm-town.com/life/ryouhou03.html)
