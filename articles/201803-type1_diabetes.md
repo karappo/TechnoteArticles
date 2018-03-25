@@ -4,19 +4,23 @@
 
 ## 1型糖尿病(T1D)とは
 
-日本人糖尿患者の約95％を占めるのは生活習慣病の2型糖尿病（Type2 Diabetes。以下T2D）です。T1DとT2Dとは全く違います。生活習慣や遺伝などとは無関係に、様々な理由[note]私の場合は風邪のウイルスがトリガーだった可能性が高いですが、厳密には不明です。ストレスなどが原因になる場合もあるようで、誰にでも発症の可能性があります。[/note]から突然発症します。T1Dは、自己免疫が膵臓にあるβ細胞というインスリンを作る細胞を破壊してしまい、インスリンが欠乏する病気です。インスリンは、血液中の糖分（Glucose）を細胞に運びエネルギーに変える働きをしているホルモンです。インスリンが欠乏すると、血液中に糖があふれ高血糖になります。
+日本人糖尿患者の約95％を占めるのは生活習慣病の2型糖尿病（Type2 Diabetes。以下T2D）です。T1DとT2Dとは全く違います。生活習慣や遺伝などとは無関係に、様々な理由[note]私の場合は風邪のウイルスが引き金だった可能性が高いのですが、厳密には不明です。ストレスなどが原因となる場合もあり、発症の可能性は誰にでもあります。[/note]から突然発症します。T1Dは、自己免疫が膵臓にあるβ細胞というインスリンを作る細胞を破壊してしまい、インスリンが欠乏する病気です。インスリンは、血液中の糖分（Glucose）を細胞に運びエネルギーに変える働きをしているホルモンです。インスリンが欠乏すると、血液中に糖があふれ高血糖になります。
 
-### 血糖測定とインスリン注射
+## 血糖測定とインスリン注射
 
 高血糖への唯一の対抗手段はインスリン製剤の注入です。その量が多すぎれば、昏睡から死をも招く低血糖になり、足りなければ高血糖となり<a href="https://ja.wikipedia.org/wiki/%E7%B3%96%E5%B0%BF%E7%97%85%E6%80%A7%E3%82%B1%E3%83%88%E3%82%A2%E3%82%B7%E3%83%89%E3%83%BC%E3%82%B7%E3%82%B9" target="_blank">ケトアシドーシス</a>の危険性や合併症リスクが高まります。そのため、インスリン療法は厳密に行う必要があります。患者は自分自身で、食事のたびに血糖値を測り、その値やこれから摂取する食事量に応じてインスリンの量を見積もり、自己注射します。
 
 ### ペン型注射器
 
-例えば、昔はよく病院で使われているような注射器で針も使い捨てではなかったので、熱消毒の必要もありましたが、今は「ペン型」と呼ばれる携帯性の高いタイプの機材があり、針も使い捨てで消毒は不要です。
-
 ![Novo Pen Echo](https://www.novonordisk.com/content/dam/Denmark/HQ/Patients/DiabetesCare/PensNeedlesInjection/NovopenEcho-v3.png)
 
+インスリンの自己注射には、「ペン型」と呼ばれる携帯性に優れたタイプの機材があります。針は使い捨てで消毒は不要です。
+
+
 [Novo Pen Echo](https://www.novonordisk.com/patients/diabetes-care/pens--needles-and-injection-support/NovoPenEcho.html)
+
+
+昔はよく病院で使われているような注射器だったらしいです。針も使い捨てではなかったので、煮沸消毒の必要もありました。
 
 
 ### FreeStyle Libre
@@ -63,15 +67,14 @@ https://www.youtube.com/watch?v=4JjsOL81wdA
 
 ### Tidepool
 
-Tidepoolは、世界中の患者の糖尿病機器からのデータを取得し、患者およびそのケアチームにデータのビジュアライズを提供してくれます。更に、患者は任意で自身のデータを匿名で研究機関に提供することもでき、研究に役立ててもらうこともできるという、オープンソースの非営利企業です。
+<a href="https://tidepool.org/" target="_blank">Tidepool</a>は、世界中の患者の糖尿病機器からのデータを取得し、患者およびそのケアチームにデータのビジュアライズを提供してくれます。更に、患者は任意で自身のデータを匿名で研究機関に提供することもでき、研究に役立ててもらうこともできるという、オープンソースの非営利企業です。
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hQAXerpH8Tc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-実際の先生と患者が出演して診断している時の様子を見せてくれてる動画。
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jPuCWgqCcR0?start=436" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<a href="https://www.youtube.com/embed/jPuCWgqCcR0?start=436" target="_blank">実際の先生と患者が出演して診断している時の様子を見せてくれてる動画</a>もあり面白いです。
 
-[Tidepool](https://tidepool.org/)
 
-[JDRF](http://www.jdrf.org/)（国際若年性糖尿病研究財団）がサポートしている。FBグループ「iVOX (TYPE1 IDDM JAPAN)」で教えていただきました。このグループも、色々な情報が得られます。
+
+<a href="http://www.jdrf.org/" target="_blank">JDRF（国際若年性糖尿病研究財団）</a>がサポートしている。FBグループ「iVOX (TYPE1 IDDM JAPAN)」で教えていただきました。このグループも、色々な情報が得られます。
 
 ソースコードも公開されててすごい・・・（react+reduxみたい）
 https://github.com/tidepool-org/blip
