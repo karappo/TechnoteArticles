@@ -9,7 +9,7 @@
   "main": "README.md",
   "dependencies": {},
   "devDependencies": {
-    "textlint": "^11.3.0",
+    "textlint": "^11.3.1",
     "textlint-rule-no-todo": "^2.0.1",
     "textlint-rule-preset-japanese": "^4.0.3",
     "textlint-rule-preset-jtf-style": "^2.3.3"
