@@ -1,0 +1,24 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "20:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: textlint
+    versions:
+    - 11.8.1
+    - 11.8.2
+    - 11.8.3
+  - dependency-name: textlint-rule-preset-jtf-style
+    versions:
+    - 2.3.6
+    - 2.3.7
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
+  - dependency-name: textlint-rule-preset-japanese
+    versions:
+    - 5.0.0
