@@ -12,7 +12,7 @@
     "textlint": "^11.6.1",
     "textlint-rule-no-todo": "^2.0.1",
     "textlint-rule-preset-japanese": "^4.0.4",
-    "textlint-rule-preset-jtf-style": "^2.3.4"
+    "textlint-rule-preset-jtf-style": "^2.3.9"
   },
   "scripts": {
     "test": "textlint './articles/*'"
